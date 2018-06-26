@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	
+    <!-- BootstrapJS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/index.css" rel="stylesheet">
+
+</head>
+
+
+<body ng-app="myApp">
+
+    <form>
+        <div class="container" ng-controller="MainController">
+        
+          <div class="row" id="heading">
+        
+           </div>
+          <div class="calculator">
+
+                <center><h1 class="display-4 font-italic">Calcolatrice</h1></center>
+               
+
+            <div class="head" id="head">
+
+                <div class="input"><span ng-hide="done">{{val_string}}</span><span ng-show="done">{{tot}}</span></div>
+            
+            </div>
+
+            <br>
+
+            <div class="clbody">
+
+              <button class="btn btn-success" value=7 ng-click="upper(7)">7</button>
+              <button class="btn btn-success" value=7 ng-click="upper(8)">8</button>
+              <button class="btn btn-success" value=8 ng-click="upper(9)">9</button>
+              <button class="btn btn-info" value="/" ng-click="upper('/')">/</button>
+
+              <button class="btn btn-success" value=9 ng-click="upper(4)">4</button>
+              <button class="btn btn-success" value=4 ng-click="upper(5)">5</button>
+              <button class="btn btn-success" value=5 ng-click="upper(6)">6</button>
+              <button class="btn btn-info" value=* ng-click="upper('*')">*</button>
+
+              <button class="btn btn-success" value=6 ng-click="upper(1)">1</button> 
+              <button class="btn btn-success" value=1 ng-click="upper(2)">2</button>
+              <button class="btn btn-success" value=2 ng-click="upper(3)">3</button>
+              <button class="btn btn-info" ng-click="upper('-')">-</button>
+
+              <button class="btn btn-success" ng-click="upper('.')">.</button>
+              <button class="btn btn-success" value=3 ng-click="upper(0)">0</button>
+              <button class="btn btn-warning" id="clear" value="AC" ng-click="clearAll()">AC</button>
+              <button class="btn btn-info" ng-click="upper('+')">+</button>
+
+              <button class="btn btn-danger" ng-click="calcola()">=</button>
+      
+      
+            </div>
+
+          </div>
+
+        </div>
+
+    </form>
+
+    <!-- JS -->
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
