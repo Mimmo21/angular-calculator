@@ -1,5 +1,5 @@
 h1 {
-    color: #00FF00;
+    color: rgb(86, 221, 33);
 }
 body {
   background: radial-gradient(30% 90%, #F5F5F5, #42A5F5);
@@ -17,7 +17,7 @@ body {
   font-size:150%;
   margin:0 auto;
   width:375px;
-  background-color:rgb(252, 0, 0);
+  background-color:rgba(22, 5, 5, 0.521);
   border-radius:15px;
   padding:10px;
   

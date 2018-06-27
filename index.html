@@ -26,9 +26,9 @@
                 <center><h1 class="display-4 font-italic">Calcolatrice</h1></center>
                
 
-            <div class="head" id="head">
+            <div class="head" id="head" text-overflow: "ellipsis" >
 
-                <div class="input"><span ng-hide="done">{{val_string}}</span><span ng-show="done">{{tot}}</span></div>
+                <div class="input">{{tot}}</div>
             
             </div>
 
@@ -36,7 +36,7 @@
 
             <div class="clbody">
 
-              <button class="btn btn-success" value=7 ng-click="upper(7)">7 CIAO 2</button>
+              <button class="btn btn-success" value=7 ng-click="upper(7)">7</button>
               <button class="btn btn-success" value=7 ng-click="upper(8)">8</button>
               <button class="btn btn-success" value=8 ng-click="upper(9)">9</button>
               <button class="btn btn-info" value="/" ng-click="upper('/')">/</button>

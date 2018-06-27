@@ -2,24 +2,25 @@ var app = angular.module('myApp', []);
 
 app.controller('MainController', ['$scope', function($scope) {
 
-  $scope.val_string="";
-  $scope.tot=0;
+ 
+  $scope.tot="";
+  $scope.totINT=0;
   $scope.answer=0;
-  $scope.done = false;
+
     
     $scope.upper=function(value){
-      $scope.val_string=$scope.val_string+value;
+      $scope.tot=$scope.tot+value;
     }//mostra tutto ciò che l'utente inserisce
     
     $scope.calcola=function(){
-      $scope.tot=eval($scope.val_string);
-      $scope.answer=$scope.tot;
-      $scope.done = true;
+      $scope.totINT=eval($scope.tot);
+      $scope.answer=$scope.totINT;
+      $scope.tot= $scope.answer.toString();
     }//valutare l'input dell'utente
     
-  $scope.clearAll=function(){
-    $scope.val_string="";
-    $scope.tot=0;
+    $scope.clearAll=function(){
+      $scope.val_string="";
+      $scope.tot=0;
   } //pulisce tutto
 
 }]);
